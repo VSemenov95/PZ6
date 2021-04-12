@@ -15,6 +15,8 @@ public class converter {
             if (mas>=1 && mas<=4 ) {
             Scanner in2 = new Scanner(System.in);
             System.out.println("Введите число: ");
+            /*Смотри, здесь лучше всего сделать тип double, так как расстояние и масса могут быть вещественными
+            числами*/
             int kol=in2.nextInt(); // в kol кладем число - количество, выбранной единицы измерения
             if(kol>=0) { //Проверка на валидность kol
                 System.out.println("Результат:");
@@ -66,6 +68,8 @@ public class converter {
             if (ras >= 1 && ras <= 4) {
                 Scanner in2 = new Scanner(System.in);
                 System.out.println("Введите число: ");
+                /*Смотри, здесь лучше всего сделать тип double, так как расстояние и масса могут быть вещественными
+                числами*/
                 int kol = in2.nextInt(); // в kol кладем число - количество, выбранной единицы измерения
                 if (kol >= 0) { //Проверка на валидность kol
                     System.out.println("Результат:");
