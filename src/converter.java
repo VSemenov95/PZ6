@@ -66,7 +66,7 @@ public class converter {
             if (ras >= 1 && ras <= 4) {
                 Scanner in2 = new Scanner(System.in);
                 System.out.println("Введите число: ");
-                double kol = in2.nextDouble(); // в kol кладем число - количество, выбранной единицы измерения
+                double kol = in2.nextDouble(); // в kol кладем число - количество, выбранной единицы измерения,double
                 if (kol >= 0) { //Проверка на валидность kol
                     System.out.println("Результат:");
                     switch (ras) {
