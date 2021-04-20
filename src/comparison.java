@@ -7,6 +7,7 @@ public class comparison {
         System.out.println("Введите размер массива: ");
         int m = in.nextInt();
         if (m>0) {
+            //Смотри, попробуй адаптировать программу не только для чисел, но и для строк
             double[] myArray = new double[m];
             for (int i = 0; i < m; i++) {
                 Scanner in1 = new Scanner(System.in);
