@@ -2,26 +2,25 @@ import java.util.Scanner;
 
 public class comparison {
     public static void main(String[] args) {
-        double x=12.3, y=-3, z=0;
+        String x = "h", y = "12,3", z = "0";
         Scanner in = new Scanner(System.in);
-        System.out.println("Введите размер массива: ");
+        System.out.print("Введите размер массива: ");
         int m = in.nextInt();
-        if (m>0) {
+        //Заполнение массива
+        if (m > 0) {
             //Смотри, попробуй адаптировать программу не только для чисел, но и для строк
-            double[] myArray = new double[m];
+            String[] myArray = new String[m];
             for (int i = 0; i < m; i++) {
                 Scanner in1 = new Scanner(System.in);
-                System.out.println("Введите " + (i + 1) + " элемент массива");
-                myArray[i] = in1.nextDouble();
-            }
-            for (int i = 0; i < m; i++) {
-                if (myArray[i] == x | myArray[i] == y | myArray[i] == z) {
-                    System.out.println("Данное значение имеется в константах: "+myArray[i]);
+                System.out.print("Введите " + (i + 1) + " элемент массива:");
+                myArray[i] = in1.nextLine();
+                if (x.equals(myArray[i]) | y.equals(myArray[i]) | z.equals(myArray[i])) {
+                    System.out.println("Данное значение имеется в константах");
                 }
             }
         }
-        else{
-            System.out.println("Введены некорретные данные длинны массива");
-        }
+    }
+    {
+        System.out.println("Некорректная длинна массива");
     }
 }
