@@ -9,7 +9,7 @@ public class kurs {
         Scanner in1 = new Scanner(System.in);
         System.out.print("Количество рублей: ");
         double r= in.nextDouble();
-       //Перевод в долларах
+       //Перевод в доллары
         double z = r / d;
         //Задаем формат вывода
         DecimalFormat df = new DecimalFormat("#0.00");
