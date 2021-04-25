@@ -18,19 +18,19 @@ public class uravn {
                 boolean res4=Character.isDigit(sym4);
                 //Если введен +
                 if(sym1=='+'){
-                    if (sym0=='x' && ((res2 & res4)  == true)){
+                    if (sym0=='x' && (res2 & res4)){
                         int a=Character.getNumericValue(sym2);
                         int b=Character.getNumericValue(sym4);
                     int x=b-a;
                     System.out.println(x);
                     }
-                    else if (sym2=='x' && ((res0 & res4)  == true)) {
+                    else if (sym2=='x' && (res0 & res4)) {
                         int a=Character.getNumericValue(sym0);
                         int b=Character.getNumericValue(sym4);
                         int x=b-a;
                         System.out.println(x);
                     }
-                    else if (sym4=='x' && ((res0 & res2)  == true)){
+                    else if (sym4=='x' && (res0 & res2)){
                         int a=Character.getNumericValue(sym0);
                         int b=Character.getNumericValue(sym2);
                         int x=a+b;
@@ -42,19 +42,19 @@ public class uravn {
                 }
                 //Если введен -
                 else if(sym1=='-'){
-                    if (sym0=='x' && ((res2 & res4)  == true)){
+                    if (sym0=='x' && (res2 & res4)){
                         int a=Character.getNumericValue(sym2);
                         int b=Character.getNumericValue(sym4);
                         int x=b+a;
                         System.out.println(x);
                     }
-                    else if (sym2=='x' && ((res0 & res4)  == true)) {
+                    else if (sym2=='x' && (res0 & res4)) {
                         int a=Character.getNumericValue(sym0);
                         int b=Character.getNumericValue(sym4);
                         int x=a-b;
                         System.out.println(x);
                     }
-                    else if (sym4=='x' && ((res0 & res2)  == true)){
+                    else if (sym4=='x' && (res0 & res2)){
                         int a=Character.getNumericValue(sym0);
                         int b=Character.getNumericValue(sym2);
                         int x=a-b;
