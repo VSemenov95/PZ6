@@ -30,6 +30,17 @@ public class uni {
                         char sym2=myArray[0][j].charAt(n);
                         if (sym1!=sym2){
                             //если текущий символ равен символу для сравнения, наращиваем счетчик и обновляем его в массиве
+                            //Привет! Смотри, у тебя сравнивается символ с предыдущими, но у тебя символ 'a' и если
+                            //до этого идет 100 символов b, то у тебя переменная u будет равна 100, но по факту у тебя
+                            //два символа
+                            //Как вариант решения, можешь переделать этого код или использовать HashSet
+                            //Тестовые данные:
+                            /*Количество строк: 3
+                            Строка 1: rtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgf
+                            Строка 2: qwertyuiop
+                            Строка 3: rtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgioioioioioioioioioioioioioioioioioioioioio
+                            Ответ: rtrtrtrtrtrtrtrtrtrtrtrtrtrtrtrtfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgioioioioioioioioioioioioioioioioioioioioio*/
+                            //Ответ должна быть вторая строка, так как там больше всего уникальных символов
                             u++;
                             un[j]=u;
                         }
