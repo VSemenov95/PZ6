@@ -23,17 +23,8 @@ public class zagadka {
                 System.out.println("Правильно!");
             }
             //снова ввел подсказку
-            else if (otvet2.equals("Подсказка")){
+            else if(otvet2.equals("Подсказка")){
                 System.out.println("Подсказка уже недоступна");
-                System.out.print("Ответ(подсказка недоступна): ");
-                Scanner in5 = new Scanner(System.in);
-                String otvet5 = in5.nextLine();
-                if (otvet5.equals(otvet)) {
-                        System.out.println("Правильно!");
-            }
-                else {
-                    System.out.println("Обидно, приходи в другой раз");
-                }
             }
             //не угадал
             else {
@@ -51,15 +42,6 @@ public class zagadka {
             }
             else if (otvet2.equals("Подсказка")){
                 System.out.println("Подсказка уже недоступна");
-                System.out.print("Ответ(подсказка недоступна): ");
-                Scanner in6 = new Scanner(System.in);
-                String otvet6 = in6.nextLine();
-                if (otvet6.equals(otvet)) {
-                    System.out.println("Правильно!");
-                }
-                else {
-                    System.out.println("Обидно, приходи в другой раз");
-                }
             }
             else {
                 System.out.println("Подумай еще");
@@ -71,9 +53,6 @@ public class zagadka {
                 }
                 else if (otvet3.equals("Подсказка")) {
                     System.out.println("Подсказка уже недоступна");
-                    System.out.print("Ответ(подсказка недоступна): ");
-                    Scanner in7 = new Scanner(System.in);
-                    String otvet7 = in7.nextLine();
                 }
                 else {
                     System.out.println("Обидно, приходи в другой раз");
